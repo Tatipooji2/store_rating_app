@@ -1,0 +1,35 @@
+.admin-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .admin-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 20px;
+  }
+  
+  .admin-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .admin-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .admin-button:hover {
+    background-color: #0056b3;
+  }
+  
