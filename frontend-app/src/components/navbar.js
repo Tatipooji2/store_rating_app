@@ -3,6 +3,7 @@ import './navbar.css';
 
 const Navbar = ({ role }) => {
   return (
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">Store Ratings</a>
         <button
@@ -16,30 +17,22 @@ const Navbar = ({ role }) => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+        <div className="nav" id="navbarNav">
+          <ul className="navbar-nav ms-auto d-flex gap-3">
             <li className="nav-item">
-              <a className="nav-link active" href="#">Home</a>
+              <a className="nav-link" href="#">Home</a>
             </li>
-
-            {role === "admin" && (
-              <li className="nav-item">
-                <a className="nav-link" href="/admin">Admin Panel</a>
-              </li>
-            )}
-            {role === "store_owner" && (
-              <li className="nav-item">
-                <a className="nav-link" href="/my-store">My Store</a>
-              </li>
-            )}
-            {role === "user" && (
-              <li className="nav-item">
-                <a className="nav-link" href="/stores">Browse Stores</a>
-              </li>
-            )}
-            
             <li className="nav-item">
-              <a className="nav-link" href="/profile">Profile</a>
+              <a className="nav-link" href="/login">Login</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/admin">System Administrator</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/user">Normal User</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/owner">Store Owner</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/logout">Logout</a>
@@ -47,6 +40,7 @@ const Navbar = ({ role }) => {
           </ul>
         </div>
       </div>
+    </nav>
   );
 };
 

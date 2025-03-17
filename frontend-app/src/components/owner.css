@@ -1,0 +1,35 @@
+.owner-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #eef2f7;
+    min-height: 100vh;
+  }
+  
+  .owner-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .owner-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .owner-button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .owner-button:hover {
+    background-color: #e68900;
+  }
+  
